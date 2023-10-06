@@ -7,20 +7,20 @@
   <title>Static</title>
   <style>
 
-    body {
+    body{
       width: 550px;
       margin: 0 auto;
       font-family: "Roboto";
     }
 
-    p {
+    p{
         background-color: #cfe8dc;
         border: 2px solid #4fb9e3;
         padding: 10px;
         margin: 10px;
         border-radius: 5px;
     }
-
+    
     .relativo {
       position: relative;
       background: #e6b56b5b;
@@ -28,7 +28,7 @@
       top: 20px;
       left: 30px;
     }
-
+    
     .absoluto {
         position: absolute;
         background: #ff54684d;
@@ -36,15 +36,15 @@
         top: 40px;
         right: 30px;
     }
-
+    
     .fixo {
         position: fixed;
-        background: #6ca3f57e;
+        z-index: -1;
         border: 2px solid #1a0c96;
         top: 310px;
         right: 30px;  
     }
-
+  
     .pegajoso {
       position: sticky;
       background: #4ff149af;
@@ -52,7 +52,6 @@
       top: 0px;
       left: 30px;
     }
-
   </style>
 </head>
 <body>
@@ -61,7 +60,7 @@
   <p>Elemento com posicionamento estático (static) fica no fluxo normal.</p>
   <p class="relativo  ">Elemento com posicionamento relativo (relative) fica no fluxo normal.</p>
   <p>Elemento com posicionamento estático (static) fica no fluxo normal.</p>
-  <p class="absoluto">Elemento com posicionamento absoluto (absolute) sai do fluxo.</p>
+  <p class="absoluto">Elemento com posicionamento absoluto (absolute) sai da relatividade.</p>
   <p>Elemento com posicionamento estático (static) fica no fluxo normal.</p>
   <p class="fixo">Elemento com posicionamento fixo (fixed) sai do fluxo.</p>
   <p>Elemento com posicionamento estático (static) fica no fluxo normal.</p>
